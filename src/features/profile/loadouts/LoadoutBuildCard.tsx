@@ -3,7 +3,7 @@
 import { BuildCard } from '@/features/build/components/BuildCard'
 import { DBBuild } from '@/features/build/types'
 
-import { RemoveFromLoadoutButton } from './RemoveFromLoadoutButton'
+import { RemoveFromLoadoutButton } from '../components/RemoveFromLoadoutButton'
 
 interface Props {
   build: DBBuild & { slot: number }

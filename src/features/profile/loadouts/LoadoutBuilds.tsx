@@ -1,14 +1,12 @@
 'use server'
 
 import { getServerSession } from '@/features/auth/lib'
-import { BuildCard } from '@/features/build/components/BuildCard'
 import { getArrayOfLength } from '@/features/build/lib/getArrayOfLength'
 import { DBBuild } from '@/features/build/types'
 import { prisma } from '@/features/db'
 
 import { DEFAULT_DISPLAY_NAME } from '../constants'
 import { LoadoutBuildCard } from './LoadoutBuildCard'
-import { RemoveFromLoadoutButton } from './RemoveFromLoadoutButton'
 
 export async function LoadoutBuilds() {
   const session = await getServerSession()
